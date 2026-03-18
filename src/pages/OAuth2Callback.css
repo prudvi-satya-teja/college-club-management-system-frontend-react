@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&family=Instrument+Sans:wght@400;500;600&display=swap');
+
+.oauth-root {
+  min-height: 100vh;
+  background: #0e0f12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Instrument Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.oauth-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#2e3142 1px, transparent 1px),
+    linear-gradient(90deg, #2e3142 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.oauth-glow {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(74,108,247,0.09) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.oauth-glow2 {
+  position: absolute;
+  bottom: -120px;
+  left: -80px;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.oauth-card {
+  position: relative;
+  z-index: 2;
+  background: #1c1e26;
+  border: 1px solid #2e3142;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  min-width: 300px;
+  animation: oauthFadeUp 0.5s ease both;
+}
+
+@keyframes oauthFadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.oauth-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c9a84c;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+.oauth-logo span {
+  font-style: italic;
+  color: #e8c97a;
+}
+
+.oauth-message {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f5f0e8;
+  margin: 0;
+}
+
+.oauth-sub {
+  font-size: 0.82rem;
+  color: #7a7e8f;
+  margin: 0;
+}

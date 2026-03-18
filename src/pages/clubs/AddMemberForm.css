@@ -1,0 +1,94 @@
+.member-form-wrapper {
+  padding: 1.5rem 2rem;
+  min-height: calc(100vh - 80px);
+  background: var(--bg);
+}
+
+.member-form-container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.member-form-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--font-display);
+  margin-bottom: 1.5rem;
+}
+
+.member-list {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
+
+.member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--bg);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+.member-info {
+  flex: 1;
+}
+
+.member-email {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.member-status {
+  font-size: 0.85rem;
+  color: var(--text2);
+  margin-top: 0.25rem;
+}
+
+.member-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.member-remove-btn {
+  padding: 0.4rem 0.8rem;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.member-remove-btn:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .member-form-wrapper {
+    padding: 1rem;
+  }
+
+  .member-form-container {
+    padding: 1.5rem;
+  }
+
+  .member-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .member-actions {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}
