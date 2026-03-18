@@ -18,6 +18,7 @@ import MembershipsPage from '../pages/memberships/MembershipsPage';
 import MyRegistrationsPage from '../pages/registrations/MyRegistrationsPage';
 import UsersPage from '../pages/users/UsersPage';
 import ProfilePage from '../pages/users/ProfilePage';
+import ClubForm from '../pages/clubs/ClubForm';
 
 function ProtectedLayout({ superAdminOnly = false }) {
   return (
@@ -62,6 +63,7 @@ export default function AppRouter() {
       
       <Route element={<ProtectedLayout superAdminOnly />}>
         <Route path="/users" element={<UsersPage />} />
+        <Route path="/clubs/new" element={<ClubForm />} />  
       </Route>
 
   

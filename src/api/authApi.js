@@ -1,7 +1,7 @@
   import axios from 'axios';
   import api from './axiosInstance';
 
-  const API_BASE = 'http://localhost:8080';
+  const API_BASE = 'https://aclub-campus.onrender.com';
 
   export const authApi = {
     login: (username, password) =>
