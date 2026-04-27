@@ -22,3 +22,6 @@ A web app I built to manage clubs and events at our college. Students can discov
 - JPA + Hibernate
 - MySQL
 - Cloudinary (for image uploads)
+
+## Live Link
+- [Live Link](https://aclub-campus.vercel.app)
